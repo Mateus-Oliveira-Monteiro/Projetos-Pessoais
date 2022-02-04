@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços e Orçamento</title>
+    <link rel="stylesheet" href="estilizaçao.css">
+</head>
+<body class="body">
+	<header id="cabeçalho"> 
+		<h1>Serviços e Orçamento</h1>
+		<h3>Considerações sobre o funcinamento</h3>
+		<ul>
+			<li>A duração máxima de cada evento deve ser de 5 horas</li>
+			<li>Nos compremetemos a chegar em até duas horas antes do agendado para a preparação do local</li>
+			<li>Todos devem pagar, exceto por crianças menores de 7 anos</li>
+			<li>Todos funcionários estarão uniformizados, além do acesso a nossa área de trabalho deve ser evitado a fim de não atrapalhar a cozinha</li>
+		</ul>
+	</header>
+	<main>
+        <div id="formorçamento">
+            <form method="post" name="orçamento">
+                <h3>Orçamento</h3>
+                <ul>
+                    <li><label>
+                        Nome completo*: <input type="text" name=""/>
+                    </label></li>
+                    <li><label>
+                        Endereço completo*: <input type="text" name="endereço"/>
+                    </label></li>
+                    <li><label>
+                        CEP do endereço*: <input type="number" name="cep"/>
+                    </label></li>
+                    <li><label>
+                        Telefone *: <input type="tel" name="telefone"/>
+                    </label></li>
+                    <li><label>
+                        E-mail*: <input type="email" name="email"/>
+                    </label></li>
+                </ul>
+                <br>
+                    <h3>Selecione o evento:</h3>
+                    <label>Churrasco, R$ 55,00 por pessoa<input class="radio" type="radio" name="oe"></input></label>
+                    <label>Festival, R$ 100,00 por pessoa<input class="radio" type="radio" name="oe"></input></label>
+                    <label>Refeição particular, R$ 50,00 por pessoa<input class="radio" type="radio" name="oe"></input></label>
+                    <label>Ceia, R$ 1500,00 preço único<input class="radio" type="radio" name="oe"></input></label>
+                    <label>Rodízio mediterrâneo, R$ 85,00 por pessoa<input class="radio" type="radio" name="oe"></input></label>
+                <ul>
+                    <li><label>
+                        Quantidade de pessoas*: <input type="number" name="pessoas"/>
+                    </label></li>
+                    <li><label>
+                        Quantidade de crianças*: <input type="number" name="crianças"/>
+                    </label></li>
+                    <li><label>
+                        Data do evento*: <input type="date" name="data"/>
+                    </label></li>
+                    <li><label>
+                        Horário do evento*: <input type="time" name="horario"/>
+                    </label></li>
+                    <li><label>
+                        Endereço do evento*: <input type="text" name="enderecoEvento"/>
+                    </label></li>
+                </ul>
+                <button type="send">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
